@@ -1,5 +1,7 @@
 {
-  "private": true,
+  "name": "my-umi-antd_mobile-umi_request",
+  "private": false,
+  "version": "1.0.0",
   "scripts": {
     "start:dev": "cross-env ENV=dev umi dev",
     "start:online": "cross-env ENV=prod umi dev",
