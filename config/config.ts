@@ -15,7 +15,15 @@ export default defineConfig({
   targets: {
     ie: 11,
   },
-  routes: [{ path: '/', component: '@/pages/index' }],
+  routes: [
+    { path: '/', component: '@/pages/index' },
+    // 用户相关的地方须校验
+    // { path: '/user', component: 'user',
+    //   wrappers: [
+    //     '@/components/Authorized',
+    //   ],
+    // },
+  ],
   proxy: proxy[ENV || 'dev'],
   manifest: {
     basePath: '/',
